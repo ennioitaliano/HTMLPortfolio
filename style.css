@@ -2,17 +2,28 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
 body {
-    margin: 100px;
-    font-family: 'Roboto Mono', sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    margin-top: 70px;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+h1 {
+    font-size: 36pt;
 }
 
 section {
-    margin-bottom: 300px;
+    margin-bottom: 100px;
 }
 
 p {
     text-align: justify;
     text-justify: inter-word;
+}
+
+a {
+    color: rgb(10, 110, 200);
 }
 
 nav {
@@ -29,29 +40,48 @@ nav div {
     flex-wrap: wrap;
 }
 
-nav .link{
+nav .link {
     padding-right: 30px;
     color: rgb(10, 110, 200);
 }
 
-nav span {
+span {
     padding-left: 30px;
     color: black;
 }
 
+footer span {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+footer .socials {
+    margin-bottom: 20px;
+}
+
+footer .fa {
+    font-size: 20px;
+}
 
 /* CLASSES */
 .myCard {
     margin-top: 40px;
-    width:400px;
+    width: 400px;
 }
 
 .fa {
-    font-size:24px;
+    font-size: 24px;
 }
 
 .fa:hover {
     color: rgb(10, 110, 200);
+}
+
+.socials {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 /* IDS */
@@ -61,10 +91,11 @@ nav span {
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin-top: 300px;
+    margin-bottom: 400px;
 }
 
 #memoji {
-    width:200px;
+    width: 200px;
 }
 
 /*#projects {
@@ -73,7 +104,8 @@ nav span {
     justify-content: space-around;
 }*/
 
-#AQCscreen, #IPSCicon {
+#AQCscreen,
+#IPSCicon {
     max-width: 200px;
     height: auto;
     margin-bottom: 30px;
