@@ -1,0 +1,80 @@
+/* TAGS */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+body {
+    margin: 100px;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+section {
+    margin-bottom: 300px;
+}
+
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+nav {
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav div {
+    display: flex;
+    justify-content: start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+nav .link{
+    padding-right: 30px;
+    color: rgb(10, 110, 200);
+}
+
+nav span {
+    padding-left: 30px;
+    color: black;
+}
+
+
+/* CLASSES */
+.myCard {
+    margin-top: 40px;
+    width:400px;
+}
+
+.fa {
+    font-size:24px;
+}
+
+.fa:hover {
+    color: rgb(10, 110, 200);
+}
+
+/* IDS */
+#opening {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    margin-top: 300px;
+}
+
+#memoji {
+    width:200px;
+}
+
+/*#projects {
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: space-around;
+}*/
+
+#AQCscreen, #IPSCicon {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
