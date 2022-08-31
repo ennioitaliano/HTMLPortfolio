@@ -64,10 +64,7 @@ footer .fa {
 }
 
 /* CLASSES */
-.myCard {
-    margin-top: 40px;
-    width: 400px;
-}
+
 
 .fa {
     font-size: 24px;
@@ -85,30 +82,19 @@ footer .fa {
 }
 
 /* IDS */
+
 #opening {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-top: 300px;
-    margin-bottom: 400px;
+    height: 100vh;
+    margin-bottom: 0px;
 }
+
 
 #memoji {
     width: 200px;
-}
-
-/*#projects {
-    margin-bottom: 300px;
-    display: flex;
-    justify-content: space-around;
-}*/
-
-#AQCscreen,
-#IPSCicon {
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 30px;
 }
 
 /* COPIED */
