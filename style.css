@@ -2,9 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
 body {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-bottom: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
     margin-top: 70px;
     font-family: "Roboto Mono", sans-serif;
 }
@@ -14,13 +14,21 @@ h1 {
 }
 
 section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
-p {
+header {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*p {
     text-align: justify;
     text-justify: inter-word;
-}
+}*/
 
 a {
     color: rgb(10, 110, 200);
@@ -48,6 +56,13 @@ nav .link {
 span {
     padding-left: 30px;
     color: black;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 footer span {
@@ -81,20 +96,39 @@ footer .fa {
     flex-wrap: wrap;
 }
 
+.singleskill {
+    border:2px solid lightgray;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+}
+
+
 /* IDS */
 
 #opening {
     display: flex;
     align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    justify-content: center;
     height: 100vh;
     margin-bottom: 0px;
 }
-
 
 #memoji {
     width: 200px;
 }
 
+#skillsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 /* COPIED */

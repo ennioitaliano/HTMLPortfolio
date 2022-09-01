@@ -18,7 +18,7 @@
             <nav>
                 <div>
                     <a class="link" href="#works">Works</a>
-                    <a class="link" href="#skills">Skills</a>
+                    <a class="link" href="#skillsection">Skills</a>
                     <!-- <a class="link" href="#contact">Contact</a> -->
                     <a class="link" href="#resume">Resume</a>
                 </div>
@@ -32,35 +32,39 @@
         </header>
 
         <section id="opening">
-            <h1 class="typewriter">Hi, I'm Ennio,<br>and this is my portfolio.</h1>
             <figure>
                 <img src="memoji.jpeg" id="memoji" alt="Ennio's memoji version">
             </figure>
+            <h1 class="typewriter">Hi, I'm Ennio,<br>and this is my portfolio.</h1>
+        
         </section>
 
         <section id="works">
             <h2>Here are my latest works and projects</h2>
         </section>
 
-        <section id="skills">
-            <h2>And these are my skills:</h2>
-            <h5>Desktop</h5>
-            <p><b>Advanced:</b> C++, Qt.<br><b>Base:</b> Java.</p>
-            <h5>Mobile</h5>
-            <p><b>Base:</b> Java, Kotlin, Flutter.</p>
-            <h5>Web</h5>
-            <p><b>Advanced</b>: HTML, CSS, Wordpress.<br><b>Base:</b> PHP, Javascript, NodeJS.</p>
+        <section id="skillsection">
+            <div>
+                <h2>And these are my skills:</h2>
+            </div>
+            <div id="skills">
+                <div class="singleskill">
+                    <h5>Desktop</h5>
+                    <p><b>Advanced:</b> C++, Qt.<br><b>Base:</b> Java.</p>
+                </div>
+                <div class="singleskill">
+                    <h5>Mobile</h5>
+                    <p><b>Base:</b> Java, Kotlin, Flutter.</p>
+                </div>
+                <div class="singleskill">
+                    <h5>Web</h5>
+                    <p><b>Advanced</b>: HTML, CSS, Wordpress.<br><b>Base:</b> PHP, Javascript, NodeJS.</p>
+                </div>
+            </div>
         </section>
-
-        <!--
-        <section id="contact">
-            <h2>Let's have a chat!</h2>
-            <!-- LINKS
-        </section> -->
 
         <section id="resume">
             <h2>If you are more curious, <a href="resume.pdf">here</a> you can find my resume.</h2>
-            <!-- LINKS -->
         </section>
 
         <footer>
@@ -70,7 +74,7 @@
                 <a href="https://linkedin.com/in/ennioitaliano"><span class="fa fa-linkedin"></span></a>
                 <a href="https://twitter.com/ennio_italiano"><span class="fa fa-twitter"></span></a>
             </div>
-            <h6>Copyright © Ennio Italiano, 2022</h3>
+            <div id="copyright"><h6>Copyright © Ennio Italiano, 2022</h6></div>
         </footer>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
