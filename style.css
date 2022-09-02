@@ -78,6 +78,11 @@ footer .fa {
     font-size: 20px;
 }
 
+img {
+    max-width: inherit;
+    max-height: inherit;
+}
+
 /* CLASSES */
 .fa {
     font-size: 24px;
@@ -105,9 +110,16 @@ footer .fa {
 }
 
 .singlework {
-    display: grid;
-    grid-template-rows: 1fr 1fr 3fr 1fr;
+    /*display: grid;
+    grid-template-rows: 15% 35% 15% 25% 10%;
     align-items: center;
+    height: 550px;*/
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 
 .singlework p {
@@ -118,6 +130,16 @@ footer .fa {
 .singlework span:hover {
     color: black;
 }
+
+.singlework div {
+    max-width: 300px;
+}
+
+.singlework .desc {
+    height: min-content;
+    align-items: center;
+}
+
 /* IDS */
 
 #opening {
@@ -139,16 +161,17 @@ footer .fa {
     justify-content: center;
 }
 
-#skills {
+#skills, #works {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: fit-content;
 }
 
-#works {
+/*#works {
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-}
+}*/
 /* COPIED */
