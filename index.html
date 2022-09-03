@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
-
         <link rel="stylesheet" type="text/css" href="style.css">
         <title>Ennio's Portfolio</title>
         <meta name="description" content="Ennio Italiano's personal portfolio">
@@ -32,10 +31,22 @@
 
         <section id="opening">
             <figure>
-                <img src="./media/memoji.jpeg" id="memoji" alt="Ennio's memoji version">
+                <img src="./media/memoji.png" id="memoji" alt="Ennio's memoji version" onmouseover="onHover();" onmouseout="offHover();">
             </figure>
             <div id="openingtext"><h1>Hi, I'm Ennio,<br>and this is my portfolio.</h1></div>
         </section>
+
+        <!-- <script>
+            function onHover()
+                {
+                    $("#memoji").attr('src', './media/memojisleep.png');
+                }
+
+                function offHover()
+                {
+                    $("#memoji").attr('src', './media/memoji.png');
+                }
+        </script> -->
 
         <section id="worksection">
             <div>
@@ -99,5 +110,7 @@
             </div>
             <div id="copyright"><h6>Copyright © Ennio Italiano, 2022</h6></div>
         </footer>
+
+        <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
     </body>
 </html>
