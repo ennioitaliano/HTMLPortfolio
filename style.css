@@ -1,6 +1,10 @@
 /* TAGS */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 body {
     margin-left: 50px;
     margin-right: 50px;
@@ -9,8 +13,27 @@ body {
     font-family: "Roboto Mono", sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
 h1 {
-    font-size: 36pt;
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
 }
 
 section {
@@ -51,7 +74,13 @@ nav div {
 nav .link {
     padding-right: 30px;
     color: rgb(10, 110, 200);
+    text-decoration: none;
 }
+
+nav .link:hover {
+    text-decoration: underline;
+}
+
 
 nav span, footer span {
     padding-left: 30px;
@@ -101,8 +130,8 @@ img {
 
 .singleskill, .singlework {
     border:2px solid lightgray;
-    padding-top: 15px;
-    padding-bottom: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 25px;
     padding-left: 25px;
     margin: 15px;
@@ -125,6 +154,8 @@ img {
 .singlework p {
     text-align: justify;
     text-justify: inter-word;
+    margin-top: 5px;
+    margin-bottom: 15px;
 }
 
 .singlework span:hover {
@@ -138,10 +169,12 @@ img {
 .singlework .desc {
     height: min-content;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .singlework .titlelink {
-    color: black
+    color: black;
+    text-decoration: none;
 }
 
 .singlework .titlelink:hover {
@@ -159,8 +192,14 @@ img {
     margin-bottom: 0px;
 }
 
+#openingtext {
+    margin-top: 35px;
+    margin-left: -30px;
+}
+
 #memoji {
-    width: 200px;
+    width: 225px;
+    margin-right: 0px;
 }
 
 #skillsection, #worksection {
@@ -176,6 +215,14 @@ img {
     flex-wrap: wrap;
     justify-content: center;
     height: fit-content;
+}
+
+#resumelink {
+    text-decoration: none;
+}
+
+#resumelink:hover {
+    text-decoration: underline;
 }
 
 /*#works {
