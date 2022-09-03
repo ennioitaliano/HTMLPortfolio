@@ -3,11 +3,12 @@ Personal website written in pure HTML/CSS to keep things simple and show that fa
 
 ## TO-DO List
 - [x] Works/projects section
-- [ ] Opening section that takes all the available space
-    - [ ] Down arrow
-- [ ] Typewriter animation
 - [ ] Dark mode
     - [ ] Switch
     - [ ] Theme based
     - [ ] Time based
 - [ ] Responsiveness/mobile
+***
+- [ ] Typewriter animation
+- [ ] Opening section that takes all the available space
+    - [ ] Down arrow
