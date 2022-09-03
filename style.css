@@ -1,7 +1,9 @@
 /* TAGS */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
-*, ::after, ::before {
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
@@ -13,9 +15,14 @@ body {
     font-family: "Roboto Mono", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 0;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
 }
@@ -81,8 +88,8 @@ nav .link:hover {
     text-decoration: underline;
 }
 
-
-nav span, footer span {
+nav span,
+footer span {
     padding-left: 30px;
     color: black;
 }
@@ -113,6 +120,19 @@ img {
 }
 
 /* CLASSES */
+.memoji {
+    width: 225px;
+    margin-right: 0px;
+}
+
+.upperimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 1s;
+    opacity: 0;
+}
+
 .fa {
     font-size: 24px;
 }
@@ -128,8 +148,9 @@ img {
     flex-wrap: wrap;
 }
 
-.singleskill, .singlework {
-    border:2px solid lightgray;
+.singleskill,
+.singlework {
+    border: 2px solid lightgray;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 25px;
@@ -192,23 +213,34 @@ img {
     margin-bottom: 0px;
 }
 
-#openingtext {
-    margin-left: -30px;
+#memojicontainer {
+    position: relative;
 }
 
-#memoji {
-    width: 225px;
-    margin-right: 0px;
+#memojidarkmode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#skillsection, #worksection {
+#memojisleep {
+    visibility: hidden;
+}
+
+#darkmode {
+    color: black;
+}
+
+#skillsection,
+#worksection {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#skills, #works {
+#skills,
+#works {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
