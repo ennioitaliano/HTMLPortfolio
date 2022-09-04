@@ -4,7 +4,7 @@ Personal website written in pure HTML/CSS to keep things simple and show that fa
 ## TO-DO List
 - [x] Works/projects section
 - [ ] Dark mode
-    - [ ] Switch
+    - [x] Switch
     - [ ] Theme based
     - [ ] Time based
 - [ ] Responsiveness/mobile
