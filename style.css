@@ -11,6 +11,24 @@
     color: white;
 }
 
+.dark-mode-toggle, .dark-mode-titles {
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+
+.dark-mode-titles:hover {
+    color: rgb(10, 110, 200);
+}
+
+.dark-mode-toggle:hover {
+    text-decoration: underline;
+}
+
+.singlework .dark-mode-faw:hover {
+    color: white;
+}
+
 body {
     margin-left: 50px;
     margin-right: 50px;
@@ -100,7 +118,7 @@ footer span {
     color: black;
 }
 
-#darkmode {
+nav .darkmodetext {
     color: black;
 }
 
