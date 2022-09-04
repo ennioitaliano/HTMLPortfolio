@@ -19,7 +19,7 @@
                     <a class="link" href="#worksection">Works</a>
                     <a class="link" href="#skillsection">Skills</a>
                     <a class="link" href="#resume">Resume</a>
-                    <a class="link" href="#" id="darkmode">Dark mode</a>
+                    <a class="darkmodetext link" onclick="darkmode()" href="#" id="darkmode">Dark mode</a>
                 </div>
                 <div class="socials">
                     <a href="mailto:ennio.italiano@gmail.com"><span class="fa fa-envelope"></span></a>
@@ -31,15 +31,9 @@
         </header>
 
         <section id="opening">
-            <div id="memojidarkmode">
-                <!-- <div id="darkmode">
-                    Click me to toggle dark mode
-                </div> -->
-                <div id="memojicontainer">
-                    <img class="memoji lowerimg" src="./media/memoji.png" id="memojiupper" alt="Ennio's memoji sleeping version">
-                    <img class="memoji upperimg" src="./media/memojisleep.png" id="memojisleep" alt="Ennio's memoji version" onmouseover="onHover();" onmouseout="offHover();">
-                </div>
-            </div>
+            <figure>
+                <img src="./media/memoji.png" id="memoji" alt="Ennio's memoji sleeping version">
+            </figure>
             <div id="openingtext"><h1>Hi, I'm Ennio,<br>and this is my portfolio.</h1></div>
         </section> 
 
@@ -106,6 +100,36 @@
             <div id="copyright"><h6>Copyright © Ennio Italiano, 2022</h6></div>
         </footer>
 
-        <!-- <script src="https://code.jquery.com/jquery-3.1.0.js"></script> -->
+        <script>
+            var toggle = document.getElementById("darkmode");
+            var memoji = document.getElementById("memoji");
+            var body = document.body;
+            var icons = document.getElementsByClassName("fa");
+
+            function darkmode() {
+                if(toggle.textContent=="Dark mode") {
+                    memoji.setAttribute("src", "./media/memojisleep.png");
+                    body.classList.toggle("dark-mode");
+                    
+                    for (let i = 0; i < icons.length; i++) {
+                        icons[i].classList.toggle("dark-mode");                        
+                    }
+
+                    toggle.classList.toggle("dark-mode");
+                    toggle.innerHTML = "Light mode";
+
+                } else {
+                    memoji.setAttribute("src", "./media/memoji.png");
+                    body.classList.toggle("dark-mode");
+
+                    for (let i = 0; i < icons.length; i++) {
+                        icons[i].classList.toggle("dark-mode");                        
+                    }
+
+                    toggle.classList.toggle("dark-mode");
+                    toggle.innerHTML = "Dark mode";
+                }
+            }
+        </script>
     </body>
 </html>

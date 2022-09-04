@@ -1,10 +1,14 @@
-/* TAGS */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
 *,
 ::after,
 ::before {
     box-sizing: border-box;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
 }
 
 body {
@@ -50,18 +54,20 @@ section {
     margin-bottom: 100px;
 }
 
+a {
+    color: rgb(10, 110, 200);
+}
+
+img {
+    max-width: inherit;
+    max-height: inherit;
+}
+
+/* HEADER */
+
 header {
     margin-left: 100px;
     margin-right: 100px;
-}
-
-/*p {
-    text-align: justify;
-    text-justify: inter-word;
-}*/
-
-a {
-    color: rgb(10, 110, 200);
 }
 
 nav {
@@ -94,43 +100,8 @@ footer span {
     color: black;
 }
 
-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-footer span {
-    padding-left: 0px;
-    padding-right: 30px;
-}
-
-footer .socials {
-    margin-bottom: 20px;
-}
-
-footer .fa {
-    font-size: 20px;
-}
-
-img {
-    max-width: inherit;
-    max-height: inherit;
-}
-
-/* CLASSES */
-.memoji {
-    width: 225px;
-    margin-right: 0px;
-}
-
-.upperimg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: opacity 1s;
-    opacity: 0;
+#darkmode {
+    color: black;
 }
 
 .fa {
@@ -146,6 +117,38 @@ img {
     justify-content: start;
     align-content: center;
     flex-wrap: wrap;
+}
+
+/******************** MAIN CONTENT ********************/
+
+#opening {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 0px;
+}
+
+#memoji {
+    width: 225px;
+    margin-right: -35px;
+}
+
+#skillsection,
+#worksection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#skills,
+#works {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: fit-content;
 }
 
 .singleskill,
@@ -203,51 +206,6 @@ img {
     text-decoration: none;
 }
 
-/* IDS */
-
-#opening {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin-bottom: 0px;
-}
-
-#memojicontainer {
-    position: relative;
-}
-
-#memojidarkmode {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#memojisleep {
-    visibility: hidden;
-}
-
-#darkmode {
-    color: black;
-}
-
-#skillsection,
-#worksection {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#skills,
-#works {
-    margin-top: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: fit-content;
-}
-
 #resumelink {
     text-decoration: none;
 }
@@ -256,9 +214,24 @@ img {
     text-decoration: underline;
 }
 
-/*#works {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}*/
-/* COPIED */
+/******************** FOOTER ********************/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    padding-left: 0px;
+    padding-right: 30px;
+}
+
+footer .socials {
+    margin-bottom: 20px;
+}
+
+footer .fa {
+    font-size: 20px;
+}
