@@ -6,30 +6,9 @@
     box-sizing: border-box;
 }
 
-.dark-mode {
-    background-color: black;
-    color: white;
-}
-
-.dark-mode-toggle, .dark-mode-titles {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-}
-
-.dark-mode-titles:hover {
-    color: rgb(10, 110, 200);
-}
-
-.dark-mode-toggle:hover {
-    text-decoration: underline;
-}
-
-.singlework .dark-mode-faw:hover {
-    color: white;
-}
-
 body {
+    background-color: black;
+    color: white;
     margin-left: 50px;
     margin-right: 50px;
     margin-bottom: 30px;
@@ -115,11 +94,11 @@ nav .link:hover {
 nav span,
 footer span {
     padding-left: 30px;
-    color: black;
+    color: white;
 }
 
 nav .darkmodetext {
-    color: black;
+    color: white;
 }
 
 .fa {
@@ -201,7 +180,7 @@ nav .darkmodetext {
 }
 
 .singlework span:hover {
-    color: black;
+    color: white;
 }
 
 .singlework div {
@@ -215,7 +194,7 @@ nav .darkmodetext {
 }
 
 .singlework .titlelink {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 

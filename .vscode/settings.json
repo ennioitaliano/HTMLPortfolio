@@ -5,6 +5,7 @@
         "skillsection"
     ],
     "cSpell.enableFiletypes": [
-        "!html"
+        "!html",
+        "!javascript"
     ]
 }
