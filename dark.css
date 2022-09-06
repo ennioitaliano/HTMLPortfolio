@@ -237,11 +237,11 @@ footer .fa {
     }
 
     h5 {
-        font-size: 1.05rem;
+        font-size: 1.25rem;
     }
 
     h6 {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 
     nav {
@@ -274,6 +274,10 @@ footer .fa {
     nav span,
     footer span {
         padding: 25px;
+    }
+
+    #worksnav, #skillsnav, #resumenav {
+        display: none;
     }
 
     #opening {
