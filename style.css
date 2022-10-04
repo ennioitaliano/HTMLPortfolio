@@ -1,5 +1,16 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 
+:root {
+    --color-bg: white;
+    --color-fg: black;
+    --color-ac: rgb(10,110,200);
+}
+
+.dark-mode {
+    --color-bg: black;
+    --color-fg: white;
+}
+
 *,
 ::after,
 ::before {
@@ -23,6 +34,8 @@
 body {
     padding: 0 1.2rem;
     font-family: "Roboto Mono", sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-fg);
 }
 
 h1,
@@ -91,7 +104,7 @@ nav {
 }
 
 nav a {
-    color: black;
+    color: var(--color-fg);
     font-size: clamp(0.9rem, 0.9rem + 1vw, 1.1rem);
 }
 
@@ -104,15 +117,14 @@ nav a {
 
 footer a:hover,
 header a:hover {
-    color: rgb(10, 110, 200);
+    color: var(--color-ac)
 }
 
 header .socials a {
     padding: 0 2rem;
     font-size: clamp(1.4rem, 1.4rem + 1vw, 1.65rem);
 }
-/*!!!*/
-#darkmode,
+
 #worksnav,
 #skillsnav,
 #resumenav {
@@ -174,7 +186,7 @@ header .socials a {
 }
 
 .single-work-icons span:hover {
-    color: black;
+    color: var(--color-fg);
 }
 
 .single-work img {
@@ -206,12 +218,12 @@ header .socials a {
 }
 
 .titlelink {
-    color: black;
+    color: var(--color-fg);
     text-decoration: none;
 }
 
 .titlelink:hover {
-    color: rgb(10, 110, 200);
+    color: var(--color-ac);
     text-decoration: none;
 }
 
@@ -233,7 +245,7 @@ footer {
 
 footer a {
     padding: 0 1.5rem;
-    color: black;
+    color: var(--color-fg);
     font-size: clamp(1.1rem, 1.1rem + 1vw, 1.2rem);
 }
 
@@ -451,7 +463,7 @@ footer .socials {
     }
 
     body {
-        padding: 0 6rem;
+        padding: 0 2rem;
     }
 
     nav {
