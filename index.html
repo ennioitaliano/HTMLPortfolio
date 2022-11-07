@@ -1,105 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
-      rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="light.css" id="theme-link">
-        <title>Ennio's Portfolio</title>
-        <meta name="description" content="Ennio Italiano's personal portfolio">
-    </head>
 
-    <body>
-        <header>
-            <nav>
-                <div>
-                    <a class="link" href="#worksection" id="worksnav">Works</a>
-                    <a class="link" href="#skillsection" id="skillsnav">Skills</a>
-                    <a class="link" href="#resume" id="resumenav">Resume</a>
-                    <a class="link darkmodetext" href="#" id="darkmode">Dark mode</a>
-                </div>
-                <div class="socials">
-                    <a href="mailto:ennio.italiano@gmail.com"><span class="fahf fa fa-envelope"></span></a>
-                    <a href="https://github.com/ennioitaliano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-github"></span></a>
-                    <a href="https://linkedin.com/in/ennioitaliano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-linkedin"></span></a>
-                    <a href="https://twitter.com/ennio_italiano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-twitter"></span></a>
-                </div>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" id="theme-link">
+    <title>Ennio's Portfolio</title>
+    <meta name="description" content="Ennio Italiano's personal portfolio">
+</head>
 
-        <section id="opening">
-            <figure>
-                <img src="./media/memoji.png" id="memoji" alt="Ennio's memoji sleeping version">
-            </figure>
-            <div id="openingtext"><h1>Hi, I'm Ennio,<br>and this is my portfolio.</h1></div>
-        </section> 
-
-        <section id="worksection">
-            <div>
-                <h2>Here are my latest works and projects</h2>
+<body>
+    <header>
+        <nav>
+            <div id="links">
+                <a class="link" href="#worksection" id="worksnav">Works</a>
+                <a class="link" href="#skillsection" id="skillsnav">Skills</a>
+                <a class="link" href="#resume" id="resumenav">Resume</a>
+                <a class="link darkmodetext" href="#" id="darkmode">Dark Mode</a>
             </div>
-            <div id="works">
-                <div class="singlework">
-                    <div><h5><a class="titlelink tl" href="https://github.com/microtower00/AirQuality" target="_blank" rel="noopener noreferrer">AirQuality Charts</a></h5></div>
-                    <div><img src="./media/AirQuality.png"></div>
-                    <div><p><b>Languages:</b> C++.</p></div>
-                    <div class="desc"><p>Qt desktop application to create, import, download and edit hourly data about air components and quality of some cities in different time spans.</p></div>
-                    <a href="https://github.com/microtower00/AirQuality" target="_blank" rel="noopener noreferrer"><span class="faw fa fa-github"></span></a>
-                </div>
-                <div class="singlework">
-                    <div><h5><a class="titlelink tl" href="https://github.com/ennioitaliano/IPSubnetCalculator" target="_blank" rel="noopener noreferrer">IP Subnet Calculator</a></h5></div>
-                    <div><img src="./media/IPSC.png"></div>
-                    <div><p><b>Languages:</b> Java, Kotlin.</p></div>
-                    <div class="desc"><p>Android application allowing users to calculate some parameters useful for the design of communication networks.</p></div>
-                    <a href="https://github.com/ennioitaliano/IPSubnetCalculator" target="_blank" rel="noopener noreferrer"><span class="faw fa fa-github"></span></a>
-                </div>
-                <div class="singlework">
-                    <div><h5><a class="titlelink tl" href="https://bigbabool.it" target="_blank" rel="noopener noreferrer">BigBabool Website</a></h5></div>
-                    <div><img src="./media/BigBabool.png"></div>
-                    <div><p><b>Languages:</b> HTML, CSS.</p></div>
-                    <div class="desc"><p>WordPress static website for a childrens amusement center. Users are able to see photos, location and contact informations about the park.</p></div>
-                    <a href="https://bigbabool.it" target="_blank" rel="noopener noreferrer"><span class="faw fa fa-globe"></span></a>
-                </div>
-            </div>
-        </section>
-
-        <section id="skillsection">
-            <div>
-                <h2>And these are my skills</h2>
-            </div>
-            <div id="skills">
-                <div class="singleskill">
-                    <h5>Web</h5>
-                    <p><b>Advanced:</b> HTML, CSS, Wordpress.<br><b>Base:</b> PHP, Javascript, NodeJS.</p>
-                </div>
-                <div class="singleskill">
-                    <h5>Desktop</h5>
-                    <p><b>Advanced:</b> C++, Qt.<br><b>Base:</b> Java.</p>
-                </div>
-                <div class="singleskill">
-                    <h5>Mobile</h5>
-                    <p><b>Base:</b> Java, Kotlin, Flutter.</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="resume">
-            <h2>If you are more curious, <a id="resumelink" href="./media/resume.pdf" target="_blank" rel="noopener noreferrer">here</a> you can find my resume.</h2>
-        </section>
-
-        <footer>
             <div class="socials">
-                <a href="mailto:ennio.italiano@gmail.com"><span class="fahf fa fa-envelope"></span></a>
-                <a href="https://github.com/ennioitaliano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-github"></span></a>
-                <a href="https://linkedin.com/in/ennioitaliano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-linkedin"></span></a>
-                <a href="https://twitter.com/ennio_italiano" target="_blank" rel="noopener noreferrer"><span class="fahf fa fa-twitter"></span></a>
+                <a href="mailto:ennio.italiano@gmail.com" aria-label="Write an email to Ennio's address"><span
+                        class="fahf fa fa-envelope"></span></a>
+                <a href="https://github.com/ennioitaliano" aria-label="Ennio's GitHub profile"><span
+                        class="fahf fa fa-github"></span></a>
+                <a href="https://linkedin.com/in/ennioitaliano" aria-label="Ennio's LinkedIn profile"><span
+                        class="fahf fa fa-linkedin"></span></a>
+                <a href="https://twitter.com/ennio_italiano" aria-label="Ennio's Twitter profile"><span
+                        class="fahf fa fa-twitter"></span></a>
             </div>
-            <div id="copyright"><h6>Copyright © Ennio Italiano, 2022</h6></div>
-        </footer>
+        </nav>
+    </header>
 
-        <script src="scripts.js"></script> 
-    </body>
+    <section id="opening">
+        <figure>
+            <img src="./media/memoji.png" id="memoji" alt="">
+        </figure>
+        <div id="openingtext">
+            <h1>Hi, I'm Ennio,<br>
+                and this is my portfolio.</h1>
+        </div>
+    </section>
+
+    <section id="worksection">
+        <div>
+            <h2>Here are my latest works and projects</h2>
+        </div>
+        <div id="works">
+            <div class="col-s-6 col-xl-3">
+                <div class="single-work">
+                    <div class="single-work-title">
+                        <h3><a class="titlelink" href="https://athlonpadova.it">Athlon Gym Website</a></h3>
+                    </div>
+                    <div class="single-work-image"><img src="./media/deviceframes.png"
+                            alt="Screenshots of the Athlon gym website on mobile and desktop"></div>
+                    <div class="single-work-languages">
+                        <p><b>Languages:</b> HTML, CSS, JavaScript.</p>
+                    </div>
+                    <div class="single-work-description">
+                        <p>Responsive website for a gym in my town. Users are able to see photos, prices, courses,
+                            location
+                            and
+                            contact informations about the gym.</p>
+                    </div>
+                    <div class="single-work-icons">
+                        <a href="https://athlonpadova.it" aria-label="Athlon gym website"><span
+                                class="faw fa fa-globe"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-s-6 col-xl-3">
+                <div class="single-work">
+                    <div class="single-work-title">
+                        <h3>Personal Portfolio Website</h3>
+                    </div>
+                    <div class="single-work-image"><img src="./media/portfolio-deviceframes.png"
+                            alt="Screenshots of the website you are currently on on mobile and desktop"></div>
+                    <div class="single-work-languages">
+                        <p><b>Languages:</b> HTML, CSS, JavaScript.</p>
+                    </div>
+                    <div class="single-work-description">
+                        <p>The website you are currently on.</p>
+                    </div>
+                    <div class="single-work-icons">
+                        <a href="https://github.com/ennioitaliano/HTMLPortfolio"
+                            aria-label="This website's Github repository"><span class="faw fa fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-s-6 col-xl-3">
+                <div class="single-work">
+                    <div class="single-work-title">
+                        <h3><a class="titlelink" href="https://github.com/microtower00/AirQuality">AirQuality Charts</a>
+                        </h3>
+                    </div>
+                    <div class="single-work-image"><img src="./media/AirQuality.png"
+                            alt="Screenshot of the AirQuality Charts application on desktop"></div>
+                    <div class="single-work-languages">
+                        <p><b>Languages:</b> C++.</p>
+                    </div>
+                    <div class="single-work-description">
+                        <p>Qt desktop application to create, import, download and edit hourly data about air components
+                            and
+                            quality of some cities in different time spans.</p>
+                    </div>
+                    <div class="single-work-icons">
+                        <a href="https://github.com/microtower00/AirQuality"
+                            aria-label="AirQuality Charts Github repository"><span class="faw fa fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-s-6 col-xl-3">
+                <div class="single-work">
+                    <div class="single-work-title">
+                        <h3><a class="titlelink" href="https://github.com/ennioitaliano/IPSubnetCalculator">IP Subnet
+                                Calculator</a></h3>
+                    </div>
+                    <div class="single-work-image"><img src="./media/IPSC.png"
+                            alt="Screenshots of the IP Subnet Calculator app on mobile">
+                    </div>
+                    <div class="single-work-languages">
+                        <p><b>Languages:</b> Java, Kotlin.</p>
+                    </div>
+                    <div class="single-work-description">
+                        <p>Android application allowing users to calculate some parameters useful for the design of
+                            communication networks.</p>
+                    </div>
+                    <div class="single-work-icons">
+                        <a href="https://github.com/ennioitaliano/IPSubnetCalculator"
+                            aria-label="IP Subnet Calculator GitHub page"><span class="faw fa fa-github"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skillsection">
+        <div>
+            <h2>And these are my skills</h2>
+        </div>
+        <div id="skills">
+            <div class="singleskill">
+                <h3>Web</h3>
+                <p><b>Advanced:</b> HTML, CSS, Wordpress.<br><b>Base:</b> PHP, JavaScript.</p>
+            </div>
+            <div class="singleskill">
+                <h3>Desktop</h3>
+                <p><b>Advanced:</b> C++, Qt.<br><b>Base:</b> Java.</p>
+            </div>
+            <div class="singleskill">
+                <h3>Mobile</h3>
+                <p><b>Base:</b> Java, Kotlin, Flutter.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>If you are more curious,<br><a id="resumelink" href="./media/resume.pdf">here you can find my resume.</a>
+        </h2>
+    </section>
+
+    <footer>
+        <div class="socials">
+            <a href="mailto:ennio.italiano@gmail.com" aria-label="Write an email to Ennio's address"><span
+                    class="fahf fa fa-envelope"></span></a>
+            <a href="https://github.com/ennioitaliano" aria-label="Ennio's GitHub profile"><span
+                    class="fahf fa fa-github"></span></a>
+            <a href="https://linkedin.com/in/ennioitaliano" aria-label="Ennio's LinkedIn profile"><span
+                    class="fahf fa fa-linkedin"></span></a>
+            <a href="https://twitter.com/ennio_italiano" aria-label="Ennio's Twitter profile"><span
+                    class="fahf fa fa-twitter"></span></a>
+        </div>
+        <div id="copyright">
+            Copyright © Ennio Italiano, 2022
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
 </html>
