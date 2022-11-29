@@ -96,14 +96,14 @@ footer {
     padding: 1rem 0;
 }
 
-nav {
+header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-nav a {
+header a {
     color: var(--color-fg);
     font-size: clamp(0.9rem, 0.9rem + 1vw, 1.1rem);
 }
@@ -305,7 +305,7 @@ footer .socials {
         display: block;
     }
 
-    #links {
+    nav {
         display: flex;
         margin-bottom: 1rem;
     }
@@ -406,18 +406,18 @@ footer .socials {
         width: 100%;
     }
 
-    nav {
+    header {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding: 0 2.75rem;
+        padding: 2rem 2.75rem;
     }
 
     header .socials a {
         padding: 0 1.5rem;
     }
 
-    #links,
+    nav,
     .socials {
         margin: unset;
     }
@@ -466,7 +466,7 @@ footer .socials {
         padding: 0 2rem;
     }
 
-    nav {
+    header {
         padding: 2rem 7rem;
     }
 }
