@@ -1,7 +1,9 @@
 # HTML Portfolio
 Minimal portfolio website written in pure HTML/CSS to keep things simple.
 
-You can see the website at [ennioitaliano.github.io](https://ennioitaliano.github.io).
+You can see the website at [ennioitaliano.github.io/html-portfolio](https://ennioitaliano.github.io/html-portfolio).
+
+The [Angular version](https://github.com/ennioitaliano/angular-portfolio) of this website (visually identical to the HTML one) can be viewed at [ennioitaliano.github.io](https://ennioitaliano.github.io)
 ***
 I've build this website with a 'learning-by-doing' approach, and it has been very useful. I've learned how to deal with flex-box and grid, and got a first contact with media queries for dark mode and responsiveness; I've also used some JavaScript to switch between styles.
 
